@@ -1,0 +1,32 @@
+# Site settings
+title: *folio
+email: weihawong@hotmail.co.uk
+description: > # this means to ignore newlines until "baseurl:"
+  My portfolio and Dev Blog.
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: https://github.com/WeiOng2/WeiOng2.github.io  # the base hostname & protocol for your site
+twitter_username: ""
+github_username:  ""
+
+# SASS directory
+sass:
+   sass_dir: ./_sass/
+    
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+# Build settings
+markdown: kramdown
+hightlighter: 'rouge' 
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
